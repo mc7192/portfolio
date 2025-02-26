@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+        <title>Welcome to Michael's Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <img src="Profile.png" alt="logo" id="logo">
+            <nav id="navbar">
+                <a href="#welcome-section">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contact Me</a>
+            </nav>
+        </header>
+        <section id="welcome-section">
+            <div id="title">
+            <img src>
+            <h1>Hello World!</h1>
+            <h2>My name is Michael and I am an aspiring software engineer that has been teaching myself how to code.</h2>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Sample Projects</h2>
+            <div class="container">
+                <button id="prev">&#10094;</button> <!-- Left Arrow -->
+                <div class="track-container">
+                <ul class="track">
+                    <li class="slide project-tile current-slide">
+                        <a href="https://github.com/mc7192/battleship" target="_blank">
+                            Battleship
+                            <p>A simple battleship game made using Python with graphics. The game has an AI opponent that randomly picks locations on your board.</p>
+                        </a>
+                    </li>
+                    <li class="slide project-tile">
+                        <a href="https://github.com/mc7192/tetris" target="_blank">
+                            Tetris
+                            <p>A remake of the classic Tetris game using Python. The game is functional and features a ramping difficulty over time.</p>
+                        </a>
+                    </li>
+                    <li class="slide project-tile">
+                        <a href="https://github.com/mc7192/deforestation_data" target="_blank">
+                            Deforestation Project
+                            <p>A data analysis project done using SQL, the project features some statistics of forest areas around the world.</p>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <button id="next">&#10095;</button> <!-- Right Arrow -->
+              </div>
+              <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+              </div>
+        </section>
+        <section class="contacts">
+            <h2>Contact Me</h2>
+            <div class="icons">
+                    <a href="https://github.com/mc7192" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" class="socials" alt="GitHub">
+                      </a>
+                      <a href="https://www.linkedin.com/in/michael-ma-a16089216/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" class="socials" alt="LinkedIn">
+                      </a>
+                      <a href="mailto:michaelma719@gmail.com">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" class="socials" alt="Email">
+                      </a>
+            </div>   
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

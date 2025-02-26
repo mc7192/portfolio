@@ -1,0 +1,258 @@
+*, *::before, *::after {
+    font-size: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #bee6d5;
+  }
+  
+header {
+    width: 100vw;
+    height: 15vh;
+    z-index: 1000;
+    background: linear-gradient(45deg, #7FFFD4, #787373);
+    display: flex;
+    justify-content: space-between; 
+    position: sticky;
+    align-items: center;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+nav:last-child {
+    margin-right: 4rem;
+}
+
+
+img#logo {
+    width: auto;
+    max-width: 30%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex; 
+    gap: 40px;
+}
+
+
+nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+#title {
+    min-height: 100vh; /* Ensures it takes up full viewport height */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(270deg, #7FFFD4, #787373); /* Add a background color for visibility */
+    margin: 5% auto;
+    border-radius: 20%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 7rem;
+    color:antiquewhite;
+}
+
+#title h2{
+    font-size: 3rem;
+    color: antiquewhite;
+    padding: 20px;
+    width: 70%;
+}
+
+
+#projects {
+    width: 100%;
+    height: 100vh;
+}
+
+#projects h2 {
+  font-size: 5rem;
+  margin: 5%;
+  padding: 20px;
+  font-weight:bolder;
+}
+
+.container {
+  position: relative;
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+
+.track-container {
+  background: linear-gradient(270deg, #7FFFD4, #787373);
+  padding: 10px;
+  height: 100%;
+  position: relative;
+  border-radius: 20%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.slide {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slide a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 7rem;
+  width: 100%;
+  font-weight: bolder;
+
+}
+
+.slide a p {
+  font-size: 2.5rem;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.slide a:hover {
+  transform: scale(1.2);
+  transition: transform 500ms ease-in-out;
+
+}
+
+#next, #prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0, 0.1);
+  border: none;
+  cursor: pointer;
+  height: 4rem;
+  width: 3rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#next:hover, #prev:hover {
+  background: rgba(0,0,0, 0.5);
+}
+
+#prev {
+  left: -40px;
+}
+
+#next {
+  right: -40px;
+}
+
+.carousel-nav {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0,0,0,0.1);
+  margin: 0 12px;
+}
+
+.carousel-indicator.current-slide {
+  background: linear-gradient(270deg, #7FFFD4, #787373);
+}
+
+.contacts {
+  margin-top: 10%;
+  background: linear-gradient(45deg, #7FFFD4, #787373);
+  flex-grow: 1;  /* Makes it take up the rest of the available space */
+  display: flex; /* Optional: Helps with alignment */
+  align-items: center; /* Centers items vertically */
+  padding: 10px;
+}
+
+
+.contacts h2 {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: antiquewhite;
+  margin-left: 15%;
+  white-space: nowrap; /* Prevents wrapping to a new line */
+}
+
+.icons {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+
+.socials {
+  width: 30px;
+  height: 30px;
+  filter: invert(94%) sepia(7%) saturate(403%) hue-rotate(352deg) brightness(99%) contrast(92%);
+}
+
+.icons a:hover {
+  transform: scale(1.1);
+  filter:contrast(100);
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+  #navbar a {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+
+  .socials {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
