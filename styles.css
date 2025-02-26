@@ -94,9 +94,7 @@ h1 {
   height: 80vh;
   width: 80%;
   margin: 0 auto;
-
 }
-
 
 .track-container {
   background: linear-gradient(270deg, #7FFFD4, #787373);
@@ -203,7 +201,6 @@ h1 {
   padding: 10px;
 }
 
-
 .contacts h2 {
   font-size: 1.5rem;
   padding: 20px;
@@ -232,27 +229,101 @@ h1 {
 }
 
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
+  header {
+    width: 100vw;
+    height: 20vh;    
+}
 
-  #navbar a {
-    padding: 10px;
-    font-size: 16px;
-  }
+img#logo {
+    width: auto;
+    max-width: 40%;
+    height: 100%;
+    padding: 0 10px;
+}
 
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 16px;
-  }
-
-
-  .socials {
-    width: 30px;
-    height: 30px;
-  }
+nav {
+    display: flex; 
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
 }
 
 
+nav a {
+    font-size: 1.5rem;
+}
+
+#title {
+  min-height: 80vh; /* Ensures it takes up full viewport height */
+}
+
+h1 {
+  font-size: 4rem;
+  color:antiquewhite;
+}
+
+#title h2{
+  font-size: 2rem;
+  color: antiquewhite;
+  padding: 20px;
+  width: 70%;
+}
+
+
+#projects h2 {
+font-size: 4rem;
+}
+
+.container {
+  height: 70vh;
+}
+
+.track-container {
+height: 90%;
+}
+
+
+.slide a {
+font-size: 4rem;
+
+}
+
+.slide a p {
+font-size: 1.5rem;
+}
+
+#next, #prev {
+ margin: 0 5px;
+}
+
+.carousel-nav {
+  padding: 5px;
+  
+}
+
+.contacts {
+  margin-top: 5%;
+  padding: 5px;
+}
+
+.contacts h2 {
+  margin-left: 0;
+}
+
+.icons {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.socials {
+  width: 20px;
+  height: 30px;
+  filter: invert(94%) sepia(7%) saturate(403%) hue-rotate(352deg) brightness(99%) contrast(92%);
+}
+
+}
